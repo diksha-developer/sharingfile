@@ -22,23 +22,27 @@ const SignUp = () => {
           <Form.Label>FirstName</Form.Label>
           <Form.Control
             type="text"
-            {...register("firstName", { required: true, maxLength: 10 })}
+            {...register("firstName", {
+              required: true,
+              pattern: /^(?=.*[ A-Za-z]).{1,15}$/,
+            })}
             placeholder="Enter your Firstname"
           />
         </Form.Group>
-        {errors.firstName && (
-          <p className="errors">FirstName max-length is 10</p>
-        )}
+        {errors.firstName && <p className="errors">Check FirstName </p>}
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>LastName</Form.Label>
           <Form.Control
             type="text"
-            {...register("lastName", { required: true, maxLength: 10 })}
+            {...register("lastName", {
+              required: true,
+              pattern: /^(?=.*[ A-Za-z]).{1,15}$/,
+            })}
             placeholder="Enter your Lastname"
           />
         </Form.Group>
-        {errors.lastName && <p className="errors">Lastname max-length is 10</p>}
+        {errors.lastName && <p className="errors">Check Lastname</p>}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Contact</Form.Label>
           <Form.Control
@@ -46,13 +50,11 @@ const SignUp = () => {
             {...register("contact", {
               required: true,
               pattern: /^(?=.*\d).{10}$/,
-              maxLength: 10,
-              minLength: 10,
             })}
             placeholder="Enter your Contact Number"
           />
         </Form.Group>
-        {errors.contact && <p className="errors">Contact length is 10</p>}
+        {errors.contact && <p className="errors">Enter right Contact number</p>}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -79,7 +81,7 @@ const SignUp = () => {
         </Form.Group>
         {errors.password && (
           <p className="errors">
-            Password should include(A,a,2,#@) and length(6-15)
+            Password should include(A,a,2) and length(6-15)
           </p>
         )}
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
