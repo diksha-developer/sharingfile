@@ -45,6 +45,7 @@ const SignUp = () => {
             type="tel"
             {...register("contact", {
               required: true,
+              pattern: /^(?=.*\d).{10}$/,
               maxLength: 10,
               minLength: 10,
             })}
