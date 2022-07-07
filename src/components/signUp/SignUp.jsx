@@ -83,14 +83,15 @@ const SignUp = () => {
             type="password"
             {...register("password", {
               required: true,
-              pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+              pattern:
+                /^(?=.*\d)(?=.*[a-z])(?=.*[@$!%*#?&])(?=.*[A-Z]).{6,15}$/,
             })}
             placeholder="Password"
           />
         </Form.Group>
         {errors.password && (
           <p className="errors">
-            Password should include(A,a,2) and length(6-15)
+            Password should include(A,a,2,#@$%) and length(6-15)
           </p>
         )}
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
