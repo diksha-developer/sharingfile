@@ -3,6 +3,9 @@ import { Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";
 import { useForm } from "react-hook-form";
+import { AiOutlineMail, AiOutlineUser } from "react-icons/ai";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 const SignUp = () => {
   const {
@@ -16,10 +19,11 @@ const SignUp = () => {
   };
   return (
     <div className="signUpContainer">
-      <h1>SignUp</h1>
+      <h1 className="heading">SignUp</h1>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>FirstName</Form.Label>
+          <AiOutlineUser />
+          <Form.Label className="signuplabel">FirstName</Form.Label>
           <Form.Control
             type="text"
             {...register("firstName", {
@@ -32,7 +36,9 @@ const SignUp = () => {
         {errors.firstName && <p className="errors">Check FirstName </p>}
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>LastName</Form.Label>
+          <AiOutlineUser />
+          <Form.Label className="signuplabel">LastName</Form.Label>
+
           <Form.Control
             type="text"
             {...register("lastName", {
@@ -44,7 +50,8 @@ const SignUp = () => {
         </Form.Group>
         {errors.lastName && <p className="errors">Check Lastname</p>}
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Contact</Form.Label>
+          <BsFillTelephoneFill />
+          <Form.Label className="signuplabel">Contact</Form.Label>
           <Form.Control
             type="tel"
             {...register("contact", {
@@ -56,7 +63,8 @@ const SignUp = () => {
         </Form.Group>
         {errors.contact && <p className="errors">Enter right Contact number</p>}
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <AiOutlineMail />
+          <Form.Label className="signuplabel">Email address</Form.Label>
           <Form.Control
             type="email"
             {...register("email")}
@@ -69,7 +77,8 @@ const SignUp = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label className="password">Password</Form.Label>
+          <RiLockPasswordFill />
+          <Form.Label className="signuplabel">Password</Form.Label>
           <Form.Control
             type="password"
             {...register("password", {
