@@ -2,18 +2,19 @@
 body{
     justify-content: center;
     display: flex;
-    background-color: azure !important;
+    background-color: #eef2f2 !important; 
     /* background-color:white !important; */
     
   }
   
-  
+  /* #eef2f2 */
   .signUpContainer{
-      border: 1px solid black;
-      padding: 20px 40px;
+      /* border: 1px solid black; */
+      padding: 20px 50px;
       margin-top: 40px;
-      border-radius: 5px;
+      border-radius: 10px;
       background-color: white;
+    
     }
     
     .errors{
@@ -23,6 +24,8 @@ body{
 
     .heading{
         text-align: center;
+        color: #4747f5;
+        font-weight: 700;
     }
     .signuplabel{
       margin-left: 5px;
