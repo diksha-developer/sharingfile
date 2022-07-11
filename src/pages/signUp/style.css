@@ -1,0 +1,31 @@
+
+body{
+    justify-content: center;
+    display: flex;
+    background-color: #eef2f2 !important; 
+    
+  }
+  
+
+  .signUpContainer{
+      padding: 20px 50px;
+      margin-top: 40px;
+      border-radius: 10px;
+      background-color: white;
+    
+    }
+    
+    .errors{
+      color:red ;
+      font-size: small;
+    }
+
+    .heading{
+        text-align: center;
+        color: #4747f5;
+        font-weight: 700;
+    }
+    .signuplabel{
+      margin-left: 5px;
+      font-weight: 500;
+    }
