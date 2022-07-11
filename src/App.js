@@ -3,6 +3,7 @@ import "./components/signUp/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from "./components/signUp/SignUp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Login } from "./components/login/Login";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SignUp />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
