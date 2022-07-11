@@ -1,21 +1,20 @@
 /*  login css */
-body{
+/* body{
     background-image: url('../../Assets/image/pexels-pixabay-235985.jpg'); 
     background-size: cover;
-    /* background-image: url('../../Assets/image/img.jpg'); */
-   
+} */
+.logincls{
+  background-image: url('../../Assets/image/pexels-pixabay-235985.jpg'); 
+    background-size: cover;
+    padding-top: 120px;
 }
 .container {
   width: 65%;
-  margin-top: 122px;
-  
 }
 .innercls {
   width: 50%;
   background: rgb(2 2 2 / 19%);
   padding-top: 98px;
-  
-
 }
 .maincls {
   display: flex;
