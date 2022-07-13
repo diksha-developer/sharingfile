@@ -1,0 +1,12 @@
+.search{
+display: flex;
+margin-top: -22px;
+}
+input.input {
+    margin-top: 29px;
+}
+button.btn-cls.btn.btn-primary {
+    background: white;
+    border-color: #8d8686;
+    padding: 2px 9px;
+}

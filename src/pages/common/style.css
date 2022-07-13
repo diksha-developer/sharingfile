@@ -1,0 +1,17 @@
+/* li.nav-item.dropdown {
+    display: flex;
+    margin-left: 620px;
+}
+.container-fluid-cls {
+    margin-left: 340px;
+    margin-top: -25px;
+}
+button.btn-cls.btn.btn-primary {
+    background: white;
+    border-color: black;
+    margin-top: 32px;
+    border-radius: 1px;
+} */
+.dropdown-menu.show {
+    margin-left: -153px;
+}

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Container, Form } from "react-bootstrap";
 import formimg from "../../Assets/image/downloadimg.png";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const {
@@ -58,14 +59,16 @@ export const Login = () => {
               />
             </Form.Group>
             <p className="errors">{errors.password?.message}</p>
-
-            <Button variant="primary" type="submit">
+            <Link to="/dashboard">
+           <Button variant="primary" type="submit">
               Submit
             </Button>
+           </Link>
           </Form>
         </div>
       </div>
+    
     </Container>
-  
+
   );
 };
