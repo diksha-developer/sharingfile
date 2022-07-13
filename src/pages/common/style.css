@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.sideBar{
+    width: 100px;
+    background-color:azure;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+    
+    /* margin-right: 1600px !important; */
+    
+}
+
+.sidebarBtn{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    color: black;
+    padding: 10px;
+    margin-left:10px ;
+    width: 80px;
+    
+}

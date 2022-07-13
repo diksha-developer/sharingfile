@@ -70,19 +70,18 @@ const SignUp = () => {
             {...register("password", {
               required: true,
               pattern:
-                /^(?=.*\d)(?=.*[a-z])(?=.*[@$!%*#?&])(?=.*[A-Z]).{6,15}$/,
+                /^(?=.*\d)(?=.*[a-z])(?=.*[@$!%*#?&])(?=.*[A-Z]).{8,15}$/,
             })}
             placeholder="Password"
           />
         </Form.Group>
         {errors.password && (
           <p className="errors">
-            Password should include(A,a,2,#@$%) and length(6-15)
+            Password length(8-15) and must contain each
+            <br /> (Uppercase,lowercase,special symbol,Digit)
           </p>
         )}
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
         <Button variant="primary" type="submit">
           Submit
         </Button>
