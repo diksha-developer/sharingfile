@@ -1,6 +1,6 @@
 import "./App.css";
 import "./pages/signUp/style.css";
-//import "bootstap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Outlet, ReactLocation, Router } from "@tanstack/react-location";
 import SignUp from "./pages/signUp/SignUp";
