@@ -1,12 +1,23 @@
-.search{
-display: flex;
-margin-top: -22px;
+.search {
+  display: flex;
+  margin-top: -22px;
 }
 input.input {
-    margin-top: 29px;
+  margin-top: 29px;
+  border-color: #e1d4d4;
 }
 button.btn-cls.btn.btn-primary {
-    background: white;
-    border-color: #8d8686;
-    padding: 2px 9px;
+  background: white;
+  border-color: #e1d4d4;
+  padding: 2px 9px;
+}
+@media only screen and (min-width: 320px) {
+  .search {
+    display:none;
+  }
+}
+@media only screen and (min-width: 768px){
+    .search {
+        display: flex;
+      }
 }

@@ -4,12 +4,12 @@
     background-size: cover;
 } */
 .logincls{
-  background-image: url('../../Assets/image/pexels-pixabay-235985.jpg'); 
-    background-size: cover;
+  background: #edf9f9;
     padding-top: 120px;
 }
 .container {
-  width: 65%;
+  width: 81%;
+  margin-top: 133px;
 }
 .innercls {
   width: 50%;
@@ -48,4 +48,32 @@ margin-bottom: 40px;
 }
 button.btn.btn-primary {
   margin-top: 27px;
+}
+@media only screen and (min-width: 320px) {
+  .container {
+    width:auto;
+  }
+  .maincls{
+    display: block;
+  }
+  .innerform{
+    width: auto;
+  }
+  .innercls{
+    width: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 81%;
+  }
+  .maincls{
+    display: flex;
+  }
+  .innerform{
+    width: 50%;
+  }
+  .innercls{
+    width: 50%;
+  }
 }

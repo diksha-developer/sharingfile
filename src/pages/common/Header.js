@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+//import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container,  Nav,  Navbar, NavDropdown } from "react-bootstrap";
 //import { BiUserCircle } from "react-icons/bi";
 //import { Link } from "react-router-dom";
 import { Searchbar } from "../../components/searchbar/Searchbar";
@@ -9,27 +10,23 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 export const Header = () => {
   return (
+    <div >
     <Navbar collapseOnSelect bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">dashboard</Navbar.Brand>
+      <h4>dashboard</h4>
+      <Searchbar /> 
+        {/* {/* <Navbar.Brand href="#">dashboard</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Searchbar />
-          {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
-          <Nav
+          <Searchbar />  */}
+         
+          {/* <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll
-          ></Nav>
-          <Navbar.Collapse className="justify-content-end">
+          ></Nav> */}
+          {/* <Navbar.Collapse > */}
+          <Nav>
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
               className="rounded-circle"
@@ -48,9 +45,11 @@ export const Header = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action3">Log Out</NavDropdown.Item>
             </NavDropdown>
-          </Navbar.Collapse>
-        </Navbar.Collapse>
+            </Nav>
+          {/* </Navbar.Collapse> */}
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
+    </div>
   );
 };

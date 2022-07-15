@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Container, Form } from "react-bootstrap";
 import formimg from "../../Assets/image/downloadimg.png";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 export const Login = () => {
   const {
@@ -12,11 +13,12 @@ export const Login = () => {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate();
   const onSubmit = (data) => {
+    navigate("/dashboard");
     console.log(data);
   };
   return (
-  
     <Container>
       <div className="maincls">
         <div className="innercls">
@@ -32,43 +34,33 @@ export const Login = () => {
               <Form.Control
                 type="email"
                 {...register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "Email must valid",
-                  },
+                  required: true,
                 })}
-                placeholder="Enter email"
+                placeholder="email"
               />
+               {errors.email && <p className="errors">Please enter Email</p>}
             </Form.Group>
-            <p className="errors">{errors.email?.message}</p>
+           
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label className="signuplabel">Password</Form.Label>
+
               <Form.Control
                 type="password"
                 {...register("password", {
-                  required: "Password is required",
-                  pattern: {
-                    value:
-                      /^(?=.*\d)(?=.*[a-z])(?=.*[@$!%*#?&])(?=.*[A-Z]).{6,15}$/,
-                    message:
-                      " Password must contain atlest 6 character, one uppercase , one lower case , one number and one special case character",
-                  },
+                  required: true,
                 })}
                 placeholder="Password"
               />
+              {errors.password && (
+                <p className="errors">Please enter password</p>
+              )}
             </Form.Group>
-            <p className="errors">{errors.password?.message}</p>
-            <Link to="/dashboard">
-           <Button variant="primary" type="submit">
-              Submit
-            </Button>
-           </Link>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
           </Form>
         </div>
       </div>
-    
     </Container>
-
   );
 };

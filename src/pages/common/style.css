@@ -1,17 +1,19 @@
-/* li.nav-item.dropdown {
-    display: flex;
-    margin-left: 620px;
-}
-.container-fluid-cls {
-    margin-left: 340px;
-    margin-top: -25px;
-}
-button.btn-cls.btn.btn-primary {
-    background: white;
-    border-color: black;
-    margin-top: 32px;
-    border-radius: 1px;
-} */
 .dropdown-menu.show {
-    margin-left: -153px;
+  margin-left: -153px;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.card {
+  align-items: center;
+  border: 1px solid darkgray;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.clshead {
+  border-bottom-style: ridge;
+  text-align: initial;
+  margin-left: 16px;
 }
