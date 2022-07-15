@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.w3-teal{
+    position: absolute;
+    left: 0px;
+}
+
+.w3-sidebar{
+    left: 0px;
+    /* display: block; */
+    background-color: aliceblue !important;
+}
+
+
+.sidebarBtn{
+    border: none;
+    font-size: large;
+    display: block;
+    width: 199px;
+    border-radius: 0%;
+    padding: 10px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+   
+   
+    
+}
+.firstbtn{
+    margin-top: 50px;
+}
+
+#closebtn{
+    right: 0px;
+}
+
+
+.active {
+    background-color:plum;
+  }
+

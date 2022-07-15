@@ -1,7 +1,7 @@
 import React from "react";
 
 const Files = () => {
-  return <div>Files</div>;
+  return <div>this is our files component</div>;
 };
 
 export default Files;
