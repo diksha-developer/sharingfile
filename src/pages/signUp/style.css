@@ -1,8 +1,12 @@
 
 body{
+  background-color: #eef2f2 !important;
+}
+
+.mainDiv{
     justify-content: center;
     display: flex;
-    background-color: #eef2f2 !important; 
+    
     
   }
   

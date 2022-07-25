@@ -1,10 +1,7 @@
 import React from "react";
 import "./sidebar.css";
 import "./w3style.min.css";
-import { Link } from "@tanstack/react-location";
-
 const SideBar = ({ setComponentVisibility }) => {
-  let buttonClasses = "w3-button w3-teal w3-xlarge openSideBar";
   return (
     <div className="mainDiv">
       <div
@@ -12,19 +9,8 @@ const SideBar = ({ setComponentVisibility }) => {
         style={{ display: "block" }}
         id="mySidebar"
       >
-        <button
-          id="closebtn"
-          className={buttonClasses}
-          onClick={() => {
-            document.getElementById("mySidebar").style.display = "none";
-          }}
-        >
-          ☰
-        </button>
-
         <div className="sidebarButtonDiv">
-          <Link
-            to="/dashboard/home"
+          <button
             className="sidebarBtn firstbtn"
             onClick={() => {
               setComponentVisibility({
@@ -35,9 +21,8 @@ const SideBar = ({ setComponentVisibility }) => {
             }}
           >
             Home
-          </Link>
-          <Link
-            to="/dashboard/files"
+          </button>
+          <button
             className="sidebarBtn"
             onClick={() => {
               setComponentVisibility({
@@ -48,9 +33,8 @@ const SideBar = ({ setComponentVisibility }) => {
             }}
           >
             Files
-          </Link>
-          <Link
-            to="/dashboard/sharedwithme"
+          </button>
+          <button
             className="sidebarBtn"
             onClick={() => {
               setComponentVisibility({
@@ -61,20 +45,11 @@ const SideBar = ({ setComponentVisibility }) => {
             }}
           >
             Shared with me
-          </Link>
+          </button>
         </div>
       </div>
 
-      <div className="w3-teal">
-        <button
-          className={buttonClasses}
-          onClick={() => {
-            document.getElementById("mySidebar").style.display = "block";
-          }}
-        >
-          ☰
-        </button>
-      </div>
+      <div className="w3-teal"></div>
     </div>
   );
 };

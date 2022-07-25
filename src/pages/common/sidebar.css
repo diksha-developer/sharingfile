@@ -4,14 +4,11 @@
     padding: 0%;
 }
 .w3-teal{
-    position: absolute;
     left: 0px;
 }
 
 .w3-sidebar{
     left: 0px;
-    /* display: block; */
-    background-color: aliceblue !important;
 }
 
 
@@ -29,16 +26,21 @@
    
     
 }
-.firstbtn{
-    margin-top: 50px;
-}
+
 
 #closebtn{
     right: 0px;
+    background-color: #062522 ;
 }
 
 
 .active {
     background-color:turquoise;
   }
+
+
+.contentSection{
+    background-color:aliceblue;
+    height: 100vh;
+}
 
