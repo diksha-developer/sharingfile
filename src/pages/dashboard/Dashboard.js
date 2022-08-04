@@ -1,6 +1,6 @@
 import React from "react";
 
-import Home from "../../components/Home";
+import Home from "../../components/home/Home";
 import Files from "../../components/Files";
 import SharedWithMe from "../../components/SharedWithMe";
 import Sidebar from "../common/Sidebar";

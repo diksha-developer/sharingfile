@@ -1,0 +1,97 @@
+.mainWrapper{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    }
+
+
+.cardBox{
+    padding: 10px;
+    width: 100%;
+    margin: 10px 20px;
+    border: none !important;
+    border-radius: 20px !important;  
+    background-color: #f7f7f7 !important;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.cardBody{
+    text-align: center;
+}
+
+.fileIcon{
+    margin-bottom: 15px;
+    color:rgb(70, 126, 236) ;
+}
+
+.fileSize{
+    margin-right: auto;
+    font-size: small;
+    margin-left: 10px;
+    font-family: cursive;
+    color:rgb(70, 126, 236) ;
+}
+.cardBody{
+    max-width: 200px;
+}
+.cardOptions{
+    margin-top: 5px;
+}
+.fileSizeWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.fileSizeWrapper{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.heading{
+    color: grey;
+}
+.fileName{
+    font-family: cursive;
+}
+
+.dropdown-toggle{
+    margin-left: 210px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0 solid !important;
+    border-right: 0 solid transparent  !important;
+    border-bottom: 0 !important;
+    border-left: 0 solid transparent !important;
+
+}
+
+.uploadFilesBtn{
+    margin: 20px;
+}
+
+.FileUploadDiv{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.fileMetaData{
+    font-family: cursive;
+    margin-left: 10px;
+}
+
+.mainDiv{
+    justify-content: start;
+}
+
+.uploadFileHeading{
+    font-family: cursive;
+    margin-left: 10px;
+}
