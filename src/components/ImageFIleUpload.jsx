@@ -1,7 +1,7 @@
 import axios from "axios";
-const FormData = require("form-data");
 import React, { Component } from "react";
 import { useState } from "react";
+const FormData = require("form-data");
 
 const App = ({ files, setFiles }) => {
   const [state, setState] = useState({ selectedFile: null });

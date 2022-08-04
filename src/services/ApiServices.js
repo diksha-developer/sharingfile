@@ -5,7 +5,7 @@ export const handleSignUp = async (formValues) => {
   return await axios.post(process.env.REACT_APP_API, formValues);
 };
 
-export const handleUploadFiles = async () => {
+export const handleUploadFiles = async (formData) => {
   console.log(process.env.UPLOAD_FILE);
   return await axios.post(process.env.UPLOAD_FILE, formData);
 };
