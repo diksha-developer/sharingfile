@@ -1,8 +1,5 @@
 import React from "react";
-//import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-//import { BiUserCircle } from "react-icons/bi";
-//import { Link } from "react-router-dom";
 import { Searchbar } from "../../components/searchbar/Searchbar";
 import "./style.css";
 import { ImProfile } from "react-icons/im";
@@ -15,17 +12,6 @@ export const Header = () => {
         <Container fluid>
           <h4>dashboard</h4>
           <Searchbar />
-          {/* {/* <Navbar.Brand href="#">dashboard</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Searchbar />  */}
-
-          {/* <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          ></Nav> */}
-          {/* <Navbar.Collapse > */}
           <Nav>
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
