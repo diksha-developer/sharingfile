@@ -8,7 +8,6 @@ import { AiOutlineSetting } from "react-icons/ai";
 import HamburgurBtn from "../../components/HamburgurBtn";
 
 export const Header = () => {
-  // yhuji
   return (
     <div>
       <Navbar collapseOnSelect className="nav">
